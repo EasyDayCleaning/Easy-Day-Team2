@@ -3,7 +3,7 @@
   Plugin Name: FormGet Contact Form
   Plugin URI: http://www.formget.com
   Description: FormGet Contact Form is an eassy and effective form builder tool which enable you to bulid and embed form on your website in few steps. With FormGet Contact Form manage all your contact forms and your entire client communication at one single place.
-  Version: 5.3.5
+  Version: 5.3.6
   Author: FormGet
   Author URI: http://www.formget.com
  */
@@ -44,7 +44,7 @@ function my_admin_notice() {
     }
 }
 
-if (!isset($_GET['page']) == 'cf_page') {
+if (isset($_GET['page']) && $_GET['page'] != 'cf_page') {
     add_action('admin_notices', 'my_admin_notice');
 }
 
@@ -68,7 +68,7 @@ function delete_user_entry() {
 register_deactivation_hook(__FILE__, 'delete_user_entry');
 
 
-if (is_admin()) {
+if (is_admin() && isset($_GET['page']) && ($_GET['page'] == 'cf_page' || $_GET['page'] == 'cf_mg_page' || $_GET['page'] == 'cf_submenu_page')) {
 
     function cf_add_style() {
         wp_enqueue_style('form1_style1_sheet1', plugins_url('css/fgstyle.css', __FILE__));
@@ -329,7 +329,7 @@ function cf_embeded_script() {
     wp_localize_script('mg_script', 'mg_option', array('ajaxurl' => admin_url('admin-ajax.php'), 'mg_option_nonce' => wp_create_nonce('mg_option_nonce')));
 }
 
-if (isset($_GET['page']) == 'cf_page' || isset($_GET['page']) == 'cf_mg_page') {
+if (isset($_GET['page']) && ($_GET['page'] == 'cf_page' || $_GET['page'] == 'cf_mg_page')) {
     add_action('init', 'cf_embeded_script');
 }
 

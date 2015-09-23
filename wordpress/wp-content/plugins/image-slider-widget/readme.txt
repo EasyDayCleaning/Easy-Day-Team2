@@ -1,10 +1,10 @@
  === Image Slider ===
 Contributors: GhozyLab
 Donate link: http://ghozylab.com/donate
-Tags: image, slider, image slider, plugin slider, slider plugin, best slider, gallery slider, wordpress slider, images, free slider, wp slider, best slider plugin, meta slider, coin slider, facebook, google, wordpress, twitter, image slideshow, images slider, jquery slider, jquery slideshow, photo slider, picture slider, plugin, plugins, admin, page, post, posts, responsive slider, responsive slideshow, seo, slide, slider shortcode, slider widget, slides, slideshow, slideshow plugin, widget, widget slider, shortcode, widget slideshow, widgets, wordpress slideshow, carousel, carousel slider
+Tags: image, slider, image slider, plugin slider, slider plugin, best slider, gallery slider, wordpress slider, images, free slider, image slider plugin, wp slider, best slider plugin, meta slider, coin slider, facebook, google, wordpress, twitter, image slideshow, images slider, jquery slider, jquery slideshow, photo slider, picture slider, plugin, plugins, admin, page, post, posts, responsive slider, responsive slideshow, seo, slide, slider shortcode, slider widget, slides, slideshow, slideshow plugin, widget, widget slider, shortcode, widget slideshow, widgets, wordpress slideshow, carousel, carousel slider
 Requires at least: 3.5
 Tested up to: 4.3
-Stable tag: 1.1.27
+Stable tag: 1.1.29
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -98,6 +98,8 @@ The following are other recommended plugins by the author:
 * [Best Gallery Plugin](https://wordpress.org/plugins/easy-media-gallery/ "Best Gallery Plugin") - Easy Media Gallery is a wordpress plugin designed to display various media support including grid gallery, galleries, photo album, multiple photo albums, portfolio, photo gallery or image gallery.
 * [Best Contact Form Plugin](https://wordpress.org/plugins/contact-form-lite/ "Best Contact Form Plugin") - The Best Contact Form Plugin to create awesome Contact Form in minutes.
 * [Best Popup Plugin](https://wordpress.org/plugins/easy-notify-lite/ "Best Email Subscribe and Optin Plugin") -  The Best Notify and Subscription Form Plugin to display notify popup, announcement and subscribe form with very ease, fancy and elegant.
+* [Best Image Carousel](https://wordpress.org/plugins/image-carousel/ "image carousel") - Touch enabled WordPress plugin that lets you create a beautiful responsive image carousel.
+* [Best Gallery Lightbox](https://wordpress.org/plugins/gallery-lightbox-slider/ "Gallery Lightbox") - Gallery Lightbox - Displays all gallery images into the lightbox slider in just a few seconds.
 
 > #### **NOTE**
 > If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" title="Translating WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://ghozylab.com" title="GhozyLab" target="_blank">GhozyLab</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" title="Download Poedit" target="_blank">Poedit</a>.
@@ -158,6 +160,10 @@ But seriously, I just want to drink coffee for free, so help a developer out. Yo
 8. Easy to insert Slider in Widget Area
 
 == Changelog ==
+
+= 1.1.29 =
+* Tweak  : Demo URL
+* Fixed : Many other PHP and CSS clean and optimization
 
 = 1.1.27 =
 * Tweak  : Ability to save grid mode in slider editor
@@ -258,5 +264,5 @@ There are no complicated instructions for using Image Slider plugin because this
 
 == Upgrade Notice ==
 
-= 1.1.27 =
+= 1.1.29 =
 IMPORTANT! SECURITY BUGS FIX, PLEASE UPDATE NOW!

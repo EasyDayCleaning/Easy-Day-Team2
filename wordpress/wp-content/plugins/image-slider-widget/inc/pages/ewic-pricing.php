@@ -29,7 +29,7 @@ function ewic_pricing_table() {
         <li class="row_style_2"><span>License</span></li>
         <li class="row_style_4"><span>Unlimited Slider</span></li>
         <li class="row_style_2"><span>Slider on Widget</span></li>       
-        <li class="row_style_4"><span>Slider on Post/Page</span><a target="_blank" href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/" style="text-decoration:underline !important;"> Click for Sample</a>&nbsp;&nbsp;<span class="newftr"></span></li>
+        <li class="row_style_4"><span>Slider on Post/Page</span><a target="_blank" href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-at-the-bottom/" style="text-decoration:underline !important;"> Click for Sample</a>&nbsp;&nbsp;<span class="newftr"></span></li>
         <li class="row_style_2"><span>360+ Slideshow Effects/Transitions</span></li>
         <li class="row_style_4"><span>390+ Title Effects/Transitions</span></li>
         <li class="row_style_2"><span>Custom CSS & Custom JS</span></li>
