@@ -52,7 +52,7 @@
 		<div id="header">
 		<div id="header-core">
 
-			<!-- <div id="logo">
+			<div id="logo">
 			<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php /* Custom Logo */ thinkup_custom_logo(); ?></a>
 			</div>
 
@@ -60,7 +60,7 @@
 			<div id="header-links-inner" class="header-links">
 				<?php wp_nav_menu(array('container' => false, 'theme_location'  => 'header_menu' ) ); ?>
 			</div>
-			</div> -->
+			</div>
 			<!-- #header-links .main-navigation -->
 
 			<?php /* Add responsive header menu */ thinkup_input_responsivehtml(); ?>
@@ -69,24 +69,6 @@
 		</div>
 		<!-- #header -->
 		<?php /* Custom Slider */ thinkup_input_sliderhome(); ?>
-        
-        <!-- #pre-header -->
-
-		<div id="header">
-		<div id="header-core">
- 			<div id="header-links" class="main-navigation">
-			<div id="header-links-inner" class="header-links">
-				<?php wp_nav_menu(array('container' => false, 'theme_location'  => 'header_menu' ) ); ?>
-			</div>
-			</div>
-			<!-- #header-links .main-navigation -->
-
-			<?php /* Add responsive header menu */ thinkup_input_responsivehtml(); ?>
-
-		</div>
-		</div>
-		<!-- #header -->
-        
 	</header>
 	<!-- header -->
 

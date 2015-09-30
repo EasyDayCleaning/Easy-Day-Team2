@@ -1,7 +1,7 @@
 {% extends '@slider/view.twig' %}
 
 {% block buttons %}
-    {% import '@slider/macro/tabs.twig' as tabs %}
+    {# {% import '@slider/macro/tabs.twig' as tabs %}
 
     {{ tabs.button(translate('General'), 'general-mode', 'gears') }}
     <div class="separator">|</div>
@@ -9,7 +9,7 @@
     <div class="separator">|</div>
     {{ tabs.button(translate('Pager'), 'pager', 'bars') }}
     <div class="separator">|</div>
-    {{ tabs.button(translate('Properties'), 'properties', 'bookmark') }}
+    {{ tabs.button(translate('Properties'), 'properties', 'bookmark') }} #}
 
 {% endblock %}
 
@@ -22,11 +22,49 @@
     {{ form.row(translate('Mode'),
     form.select('general[mode]', {'horizontal': 'Horizontal', 'vertical': 'Vertical', 'fade': 'Fade'}, slider.settings.general.mode, {'id': 'generalMode' }), 'general-mode') }}
 
-    {{ form.row(translate('Slideshow'),
-    form.select('general[auto]', {'disable': 'Disable', 'enable': 'Enable'}, slider.settings.general.auto, {'id': 'generalSlideshow' }), 'general-slideshow') }}
+    <tr>
+        <th scope="row">
+            <label>
+                {{ translate('Autostart Slideshow') }}
+            </label>
+        </th>
+        <td>
+            {% for value in ['enable', 'disable'] %}
+                <label style="margin-right: 10px;">
+                    <input type="radio" name="general[auto]"
+                           value="{{ value }}"
+                            {% if slider.settings.general.auto == value or (slider.settings.general.auto is empty and value == 'disable') %}
+                                checked="checked"
+                            {% endif %}/>
+                    <span>
+                        {{ translate(value|capitalize) }}
+                    </span>
+                </label>
+            {% endfor %}
+        </td>
+    </tr>
 
-    {{ form.row(translate('Slideshow controls'),
-    form.select('general[slideshowControls]', {'disable': 'Disable', 'enable': 'Enable'}, slider.settings.general.slideshowControls, {'id': 'slideshowControls' }), 'general-controls') }}
+    <tr>
+        <th scope="row">
+            <label>
+                {{ translate('Slideshow Controls') }}
+            </label>
+        </th>
+        <td>
+            {% for value in ['enable', 'disable'] %}
+                <label style="margin-right: 10px;">
+                    <input type="radio" name="general[slideshowControls]"
+                           value="{{ value }}"
+                            {% if slider.settings.general.slideshowControls == value or (slider.settings.general.slideshowControls is empty and value == 'disable') %}
+                                checked="checked"
+                            {% endif %}/>
+                    <span>
+                        {{ translate(value|capitalize) }}
+                    </span>
+                </label>
+            {% endfor %}
+        </td>
+    </tr>
 
     {{ form.row(translate('Navigation'),
     form.select('general[navigation]', ['standart', 'thumbnails'], slider.settings.general.navigation, {'id': 'generalNavigation' }), 'general-navigation') }}
@@ -48,7 +86,7 @@
                         checked="checked"
                             {% endif %}/>
                         <span>
-                            {{ translate(value|replace({ 'true': 'Yes', 'false': 'No' })) }}
+                            {{ translate(value|replace({ 'true': 'Enable', 'false': 'Disable' })) }}
                         </span>
                 </label>
             {% endfor %}
@@ -70,13 +108,13 @@
         </td>
     </tr>
 
-    {{ form.row(translate('Speed'),
-    form.input('text', 'general[speed]', slider.settings.general.speed|default(500), {'id': 'generalSpeed', 'class': 'regular-text', 'style': 'width: 140px;' }), 'general-speed') }}
+    {{ form.row(translate('Transition Speed'),
+    form.input('text', 'general[speed]', slider.settings.general.speed|default(500), {'id': 'generalSpeed', 'class': 'regular-text', 'style': 'width: 140px;' }) ~ ' ms', 'general-speed') }}
 
     {#{{ form.row(environment.translate('Margin'),
     form.input('text', 'general[slideMargin]', slider.settings.general.slideMargin|default(0), {'id': 'generalSlideMargin', 'class': 'regular-text', 'style': 'width: 140px;' }), 'general-margin') }}#}
 
-    {{ form.row(translate('Starting slide'),
+    {{ form.row(translate('Starting Slide'),
     form.input('checkbox', 'general[randomStart]', slider.settings.general.randomStart|default(0), {'id': 'generalRandomStart' })
     ~ form.label('generalRandomStart',translate('Start slider on a random slide')), 'general-start') }}
 
@@ -97,7 +135,7 @@
     <tr data-tab="touch" id="touch">
         <th scope="row">
             <label for="touchEnabled">
-                {{ translate('Enable touch') }}
+                {{ translate('Enable Touch') }}
                 {{ form.tooltip('general-touch') }}
             </label>
         </th>
@@ -121,7 +159,7 @@
     <tr>
         <th scope="row">
             <label for="touchOneToOneTouch">
-                {{ translate('One-to-One touch') }}
+                {{ translate('One-to-One Touch') }}
                 {{ form.tooltip('general-one-to-one') }}
             </label>
         </th>
@@ -143,13 +181,13 @@
         </td>
     </tr>
 
-    {{ form.row(translate('Swipe threshold'),
+    {{ form.row(translate('Swipe Threshold'),
     form.input('text', 'touch[swipeThreshold]', slider.settings.touch.swipeThreshold|default(50), {'id': 'touchSwipeThreshold', 'class': 'regular-text', 'style': 'width: 140px;' }), 'general-threshold') }}
 
     <tr data-tab="pager" id="pager">
         <th scope="row">
             <label for="pagerEnabled">
-                {{ translate('Enable pager') }}
+                {{ translate('Enable Pager') }}
                 {{ form.tooltip('general-pager') }}
             </label>
         </th>

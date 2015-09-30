@@ -169,8 +169,8 @@
                 {% set sizes = { 'width': 60, 'height': 80 } %}
             {% endif %}
         {% else %}
-            {% set src = image.attachment.sizes.thumbnail.url %}
-            {% set sizes = { 'width': 80, 'height': 80 } %}
+            {% set src = image|image_size(150, 100) %}
+            {% set sizes = { 'width': 150, 'height': 100 } %}
         {% endif %}
         <img width="{{ sizes.width }}" height="{{ sizes.height }}" data-original="{{ src }}" class="attachment-80x60 ready-lazy" alt="{{ image.attachment.title }}">
     </a>
@@ -180,8 +180,8 @@
 {% macro properties(image, slider) %}
     {% set nonProMsg = '<a href="http://supsystic.com/plugins/slider?utm_source=plugin&utm_medium=mainseo&utm_campaign=slider" target="_blank" style="color:#4ae8ea;margin-left:4px;">Available in PRO</a>' %}
     {% spaceless %}
-    <form id="photo-editor-{{ image.id }}" class="photo-editor attachment-{{ image.attachment.id }}">
-        <strong data-tabcontent=".tabcontent-{{ image.id }}" style="margin-left: 4px;">
+    <form id="photo-editor-{{ image.id }}" style="margin-left: 8px; height: 85px" class="photo-editor attachment-{{ image.attachment.id }}">
+        <strong data-tabcontent=".tabcontent-{{ image.id }}">
             <a href="#photo-desc-{{ image.id }}" class="add-new-h2 button active" title="Caption">{{ translate('Caption')|trim }}</a>
         </strong>
         <strong data-tabcontent=".tabcontent-{{ image.id }}" style="margin-left: 4px;">
@@ -196,20 +196,16 @@
             </strong>
         {% endif %}
         <p id="photo-desc-{{ image.id }}" class="tabcontent-{{ image.id }}" style="margin: 0;">
-            <input type="text" name="description" value="{{ image.attachment.description }}" style="margin-left: 4px" placeholder="Image description"/>
+            {# <input type="text" name="description" value="" placeholder="Image description"/> #}
+            <textarea name="description" style="height:60px;width:90%" placeholder="Image description">{{ image.attachment.description|replace({"\n":' ', "\r":' '}) }}</textarea>
         </p>
         <p id="photo-link-{{ image.id }}" class="tabcontent-{{ image.id }}" style="margin: 0;" hidden>
-            <input type="text" name="link" value="{{ image.attachment.external_link }}" style="margin-left: 4px" placeholder="Image link"/><br>
-               <input type="checkbox" id="link_in_a_new_window"  style="margin-left: 4px;" name="target" value="_blank" title="Open link in a new window" {% if image.attachment.target == '_blank' %} checked="checked"{% endif %}/>
-            <label for="link_in_a_new_window" style="margin-left: 10px;">Open link in a new window</label>
+            <input type="text" name="link" value="{{ image.attachment.external_link }}" style="margin-bottom: 5px;" placeholder="Image link"/><br>
+            <input type="checkbox" id="link_in_a_new_window" name="target" value="_blank" title="Open link in a new window" {% if image.attachment.target == '_blank' %} checked="checked"{% endif %}/>
+            <label for="link_in_a_new_window" style="margin-left: 5px;">Open link in a new window</label>
         </p>
         <p id="photo-seo-{{ image.id }}" class="tabcontent-{{ image.id }}" style="margin: 0;" hidden>
-            {% if environment.isPro() %}
-                <input type="text" name="seo" value="{{ image.attachment.seo }}" style="margin-left: 4px" placeholder="Image alt"/>
-            {% else %}
-                {# <input type="text" style="width: 50%; margin-left: 4px;" placeholder="{{ nonProMsg|escape|raw }}" disabled/> #}
-                {{ nonProMsg|raw }}
-            {% endif %}
+            <textarea name="seo" style="height:60px;width:90%" placeholder="Image alt">{{ image.attachment.seo|replace({"\n":' ', "\r":' '}) }}</textarea>
         </p>
         {% if slider.plugin == 'jssor' %}
             <p id="photo-html-{{ image.id }}" class="tabcontent-{{ image.id }}" style="margin: 0;" hidden>

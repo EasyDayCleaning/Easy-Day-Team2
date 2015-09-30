@@ -11,11 +11,11 @@
 {% endmacro %}
 
 {% block buttons %}
-    {% import '@slider/macro/tabs.twig' as tabs %}
+    {# {% import '@slider/macro/tabs.twig' as tabs %}
 
     {{ tabs.button(translate('Effects'), 'effects', 'gears') }}
     <div class="separator">|</div>
-    {{ tabs.button(translate('Controls'), 'controls', 'laptop') }}
+    {{ tabs.button(translate('Controls'), 'controls', 'laptop') }} #}
 {% endblock %}
 
 {% block form %}
@@ -57,7 +57,7 @@
                         checked="checked"
                             {% endif %}/>
                         <span>
-                            {{ translate(value|replace({ 'true': 'Yes', 'false': 'No' })) }}
+                            {{ translate(value|replace({ 'true': 'Enable', 'false': 'Disable' })) }}
                         </span>
                 </label>
             {% endfor %}
@@ -79,7 +79,7 @@
     <tr>
         <th scope="row">
             <label for="effectsTitleSpeed">
-                {{ translate('Title speed') }}
+                {{ translate('Title Speed') }}
                 {{ form.tooltip('general-title-speed') }}
             </label>
         </th>

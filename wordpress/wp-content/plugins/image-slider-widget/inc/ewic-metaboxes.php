@@ -447,14 +447,14 @@ function ewic_metabox_work(){
 					
 			array(
 					'name' => __( 'Smart Title', 'easywic' ),
-					'desc' => __( 'If ON the plugin will automatically convert uppercase the first character of each word and replace - with spaces in a title. For example : Ferrari-F12-Berlinetta-interior will change to Ferrari F12 Berlinetta Interior', 'easywic' ),
+					'desc' => __( 'If ON the plugin will automatically convert uppercase the first character of each word and replace - with spaces in a title. For example : ferrari-f12-berlinetta-interior will change to Ferrari F12 Berlinetta Interior', 'easywic' ),
 					'id' => 'ewic_meta_settings_smartttl',
 					'type' => 'checkbox',
 					'std' => 'off'
 					),	
 					
 			array(
-					'name' => __( 'Open an Image in a Lightbox', 'easywic' ),
+					'name' => __( 'Open an Images in a Lightbox', 'easywic' ),
 					'desc' => __( 'If ON, your images will displayed in a lightbox when clicked.', 'easywic' ),
 					'id' => 'ewic_meta_slide_lightbox',
 					'type' => 'checkbox',

@@ -272,6 +272,7 @@
 	height: 32px !important;
 	text-indent: -9999px;
 	z-index: 9999;
+	border:none;
 }
 
 .bx-wrapper .thumbnails .bx-controls-direction a {

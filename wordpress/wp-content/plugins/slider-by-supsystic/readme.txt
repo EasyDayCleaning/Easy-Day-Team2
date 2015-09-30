@@ -2,8 +2,8 @@
 Contributors: supsystic.com
 Donate link: http://supsystic.com/plugins/slider
 Tags: slider, slider plugin, carousel, coin slider, content slider, content slideshow, flex slider, video slider, horizontal slider, HTML5 slider, image slider, image slideshow, javascript, jquery, nivo slider, photo slider, posts slider, responsive, responsive slider, image slider, image, slide show, slideshow, wordpress slider, photo slideshow, youtube, slides
-Tested up to: 4.3
-Stable tag: 1.4.3
+Tested up to: 4.3.1
+Stable tag: 1.4.6
 
 Responsive Slider by Supsystic - the ultimate slideshow solution. Build image, video and content sliders with professional templates and options
 
@@ -36,13 +36,13 @@ Now impressive slideshows can become a good addition to your WordPress site. Ins
 
 SEO optimized sliders can do a better job of getting the images and captions indexed well in the search engine. Fade, slide, rollover, slice anything you think is possible now with Slider by Supsystic plugin. We give high level of support for users and are willing to help you out even for some custom implementations in slider.
 
-= Support =
+= Slider by SupsysticSupport =
 
 If you have any problem or feature request for the Slider by Supsystic, please [let us know](http://supsystic.com/plugins/slider?utm_source=wordpress&utm_medium=contactus&utm_campaign=slider "Contact Us")!
 
-= Translations in your language =
+= Translations in Your Language =
 
-You have an incredible opportunity to get PRO version for free. Make Translation of the plugin! It will be amazing if you take advantage of this offer!
+You have an incredible opportunity to get PRO version of the Slider plguin for FREE. All you need is to make translation of the plugin! It will be amazing if you take advantage of this offer!
 
 * English
 * Spanish (Mexico)
@@ -228,10 +228,26 @@ Important! Shortcode must be inserted in a text editor page, and not in the visu
 
 == Changelog ==
 
+= 1.4.6 = 29/09/2015
+ * Fix bug not showing html content when link provided
+ * Jssor slider now can use caption and bulets both
+ * Caption not updating bugfix
+ * Fixed bug in jssor slider when image with link not showing
+ * Change radio buttons order
+
+= 1.4.5 = 22/09/2015
+ * Move SEO attribute to free version
+ * Admin panel UI improvements
+ * Minor bug fix
+
+= 1.4.4 = 15/09/2015
+ * Added % width option to Jssor slider
+ * Minor bug fix
+
 = 1.4.3 = 08/09/2015
  * Added support buttons without position (old Jssor slider markup)
  * Optimized loader for Bx & Coin sliders
- * Added option to set vertical align of Jssor caption
+ * Added option to set vertical align of Jssor slider caption
  * Added ability to select text and background button colors in Jssor slider when you hover on it
 
 = 1.4.2 = 01/09/2015

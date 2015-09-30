@@ -34,7 +34,8 @@ table, th {
 }
 .ui-state-highlight {
 	color: black !important;
-	background: #e8eded !important;
+	/*background: #e8eded !important;*/
+	background-color: white !important;
 }
 .ui-jqgrid-htable {
 	font-size: 14px !important;

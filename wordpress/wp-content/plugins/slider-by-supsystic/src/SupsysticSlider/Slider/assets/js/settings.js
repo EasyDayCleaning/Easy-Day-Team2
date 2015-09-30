@@ -54,14 +54,15 @@
 
     Controller.prototype.checkWidth = (function() {
         var $widthType = $('[name="properties[widthType]"]'),
-            $height = $('[name="properties[height]"]');
+            $height = $('[name="properties[height]"]'),
+            $width = $('[name="properties[width]"]');
 
         $widthType.on('change', function() {
             if($(this).val() == '%') {
 
                 $height.attr('disabled', 'disabled');
 
-                var notification = noty({
+                /*var notification = noty({
                     layout: 'topRight',
                     type: 'warning',
                     text : '<h3>Warning</h3>Max width in percents is equal to 100',
@@ -72,7 +73,11 @@
                         easing: 'swing',
                         speed: '800'
                     }
-                });
+                });*/
+
+                if(parseInt($width.val()) > 100) {
+                    $width.val('100');
+                }
             } else {
                 $height.attr('disabled', false);
             }

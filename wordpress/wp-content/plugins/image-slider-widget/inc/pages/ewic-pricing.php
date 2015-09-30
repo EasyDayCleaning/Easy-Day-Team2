@@ -19,7 +19,7 @@ function ewic_pricing_table() {
     <div class="wrap">
         <div id="icon-edit" class="icon32 icon32-posts-easymedia"><br /></div>
         <h2><?php _e('Comparison', 'easywic'); ?></h2>   
-  <div class="tsc_pricingtable03 tsc_pt3_style1" style="margin-bottom:110px; height:750px;">
+  <div class="tsc_pricingtable03 tsc_pt3_style1" style="margin-bottom:110px; height:850px;">
     <div class="caption_column">
       <ul>
         <li class="header_row_1 align_center radius5_topleft"><?php ewic_share(); ?></li>
@@ -28,15 +28,19 @@ function ewic_pricing_table() {
         </li> 
         <li class="row_style_2"><span>License</span></li>
         <li class="row_style_4"><span>Unlimited Slider</span></li>
-        <li class="row_style_2"><span>Slider on Widget</span></li>       
-        <li class="row_style_4"><span>Slider on Post/Page</span><a target="_blank" href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-at-the-bottom/" style="text-decoration:underline !important;"> Click for Sample</a>&nbsp;&nbsp;<span class="newftr"></span></li>
+        <li class="row_style_2"><span>Slider on Post, Page or Widget</span></li>       
+        <li class="row_style_4"><span>Slider with Bottom Thumbnails</span><a target="_blank" href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-at-the-bottom/" style="text-decoration:underline !important;">DEMO</a></li>
+        <li class="row_style_2"><span>Slider with Right Navigation</span><a target="_blank" href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-on-right/" style="text-decoration:underline !important;">DEMO</a></li>
+        <li class="row_style_4"><span>Slider with Left Thumbnails</span><a target="_blank" href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-on-left/" style="text-decoration:underline !important;">DEMO</a></li>
+        <li class="row_style_2"><span>Slider with Bullet Navigation</span><a target="_blank" href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-bullet-navigation/" style="text-decoration:underline !important;">DEMO</a></li>
+        <li class="row_style_4"><span>Redirect Image to Specific Link</span></li>
         <li class="row_style_2"><span>360+ Slideshow Effects/Transitions</span></li>
         <li class="row_style_4"><span>390+ Title Effects/Transitions</span></li>
         <li class="row_style_2"><span>Custom CSS & Custom JS</span></li>
         <li class="row_style_4"><span>Open Slider on Lightbox</span></li>
         <li class="row_style_2"><span>Custom Transitions for Slider and Title</span></li>
         <li class="row_style_4"><span>Unlimited colors and layout</span></li>
-        <li class="row_style_4"><span>Powerful Control Panel</span><a target="_blank" href="http://demo.ghozylab.com/content/ewicpro.html" style="text-decoration:underline !important;"> Click for Sample</a></li>
+        <li class="row_style_2"><span>Powerful Control Panel</span><a target="_blank" href="http://demo.ghozylab.com/content/ewicpro.html" style="text-decoration:underline !important;"> Click for Sample</a></li>
         <li class="row_style_4"><span>Social Share Buttons</span></li>
         <li class="row_style_2"><span>WP Multisite</span></li>
         <li class="row_style_4"><span>Support</span></li>
@@ -55,9 +59,13 @@ function ewic_pricing_table() {
         <li class="row_style_3 align_center">None</li>
         <li class="row_style_1 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_3 align_center"><span class="pricing_yes"></span></li>
-        <li class="row_style_1 align_center"><span class="pricing_yes"></span>very simple slider</li>  
-        <li class="row_style_3 align_center"><span class="pricing_no"></span></li>  
-        <li class="row_style_1 align_center"><span class="pricing_no"></span></li>      
+        <li class="row_style_1 align_center"><span class="pricing_no"></span></li>  
+        <li class="row_style_3 align_center"><span class="pricing_no"></span></li>
+        <li class="row_style_1 align_center"><span class="pricing_no"></span></li>
+        <li class="row_style_3 align_center"><span class="pricing_no"></span></li>
+        <li class="row_style_1 align_center"><span class="pricing_no"></span></li>  
+        <li class="row_style_3 align_center"><span class="pricing_no"></span></li>      
+        <li class="row_style_1 align_center"><span class="pricing_no"></span></li>
         <li class="row_style_3 align_center"><span class="pricing_no"></span></li>
         <li class="row_style_1 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_3 align_center"><span class="pricing_no"></span></li>        
@@ -84,6 +92,10 @@ function ewic_pricing_table() {
         <li class="row_style_2 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_4 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_2 align_center"><span class="pricing_yes"></span></li>        
+        <li class="row_style_4 align_center"><span class="pricing_yes"></span></li>
+        <li class="row_style_2 align_center"><span class="pricing_yes"></span></li>
+        <li class="row_style_4 align_center"><span class="pricing_yes"></span></li> 
+        <li class="row_style_2 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_4 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_2 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_4 align_center"><span class="pricing_yes"></span></li> 
@@ -115,6 +127,10 @@ function ewic_pricing_table() {
         <li class="row_style_2 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_4 align_center"><span class="pricing_yes"></span></li> 
         <li class="row_style_2 align_center"><span class="pricing_yes"></span></li>
+        <li class="row_style_4 align_center"><span class="pricing_yes"></span></li>
+        <li class="row_style_2 align_center"><span class="pricing_yes"></span></li>
+        <li class="row_style_4 align_center"><span class="pricing_yes"></span></li> 
+        <li class="row_style_2 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_4 align_center"><span class="pricing_yes"></span></li> 
         <li class="row_style_2 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_4 align_center"><span class="pricing_yes"></span></li>  
@@ -137,6 +153,10 @@ function ewic_pricing_table() {
         <li class="row_style_2 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_4 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_2 align_center"><span class="pricing_yes"></span></li>        
+        <li class="row_style_4 align_center"><span class="pricing_yes"></span></li>
+        <li class="row_style_2 align_center"><span class="pricing_yes"></span></li>
+        <li class="row_style_4 align_center"><span class="pricing_yes"></span></li> 
+        <li class="row_style_2 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_4 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_2 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_4 align_center"><span class="pricing_yes"></span></li> 
@@ -165,6 +185,10 @@ function ewic_pricing_table() {
         <li class="row_style_1 align_center"><span class="pricing_yes"></span></li>        
         <li class="row_style_3 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_1 align_center"><span class="pricing_yes"></span></li>        
+        <li class="row_style_3 align_center"><span class="pricing_yes"></span></li> 
+        <li class="row_style_1 align_center"><span class="pricing_yes"></span></li>
+        <li class="row_style_3 align_center"><span class="pricing_yes"></span></li>  
+        <li class="row_style_1 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_3 align_center"><span class="pricing_yes"></span></li> 
         <li class="row_style_1 align_center"><span class="pricing_yes"></span></li>
         <li class="row_style_3 align_center"><span class="pricing_yes"></span></li>  

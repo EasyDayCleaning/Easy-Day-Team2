@@ -38,6 +38,7 @@
         });
         // Select Text in effect
         $('img#controlsType').on('click', function() {
+            $('#veditor-container').find('.bx-prev, .bx-next').attr('id', $(this).data('value'));
             $('#bx-controls').attr('value', $(this).data('value'));
             $('div.selectedPreset').removeClass().addClass('unselectedPreset');
             $(this).parent().addClass('selectedPreset');

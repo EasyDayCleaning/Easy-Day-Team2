@@ -140,7 +140,7 @@
                                min="0"
                                name="properties[width]"
                                id="propsSliderWidth"/>
-                        {% if slider.plugin == 'bx' %}
+                        {% if slider.plugin == 'bx' or  slider.plugin == 'jssor' %}
                             <select class="regular-text"
                                     name="properties[widthType]"
                                     style="display: inline; height: inherit;position: relative; bottom: 2px; width: 64px;">
@@ -277,7 +277,7 @@
         <img src="{{ environment.getConfig().get('admin_url') }}images/wpspin_light.gif" alt="" style="display: block; margin: 10px auto;"/>
     </div>
 
-    <div id="visual-editor-window" title="{{ translate('Visual editor') }}" data-id="{{ slider.id }}" data-loaded="false">
+    <div id="visual-editor-window" title="{{ translate('Slider Template Design Builder') }}" data-id="{{ slider.id }}" data-loaded="false">
     </div>
 
     <div id="free-video-notice" class="supsystic-plugin" title="{{ translate('Get PRO') }}" data-id="{{ slider.id }}" hidden>

@@ -101,6 +101,7 @@
 	-moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
+    word-wrap: break-word;
 }
 
 .supsystic-navigation ul li a i {
@@ -512,7 +513,8 @@ h3 .nav-tab {
 	border-bottom: 2px solid #ddd !important;
 }
 /*textboxes*/
-.supsystic-plugin input[type=text]{
+.supsystic-plugin input[type=text], 
+.supsystic-plugin textarea {
 	background-color: #f6f7f7;
 	color: #252728;
 	border-left: none;
@@ -522,6 +524,7 @@ h3 .nav-tab {
 	padding: 7px 5px;
 }
 .supsystic-plugin input[type="text"]:focus,
+.supsystic-plugin textarea:focus,
 .supsystic-plugin textarea:focus {
 	-webkit-box-shadow: none;
 	box-shadow: none;

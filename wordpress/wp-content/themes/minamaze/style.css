@@ -140,8 +140,7 @@ textarea {
 }
 body,
 #body-core { 
-	/* background-image:url(../../uploads/2015/09/bg.png); */
-	background-color:transparent;
+	background: white;
 	min-width: 320px;
 }
 
@@ -373,16 +372,18 @@ a:visited {
 /* ---------------------------------------------------------------------------------------
 	03. STRUCTURE
 --------------------------------------------------------------------------------------- */
-
+#pre-header-core,
+#header-core,
+#header-links-inner,
 #content-core,
+#footer-core,
+#sub-footer-core,
 #notification-core,
 #introaction-core,
 #outroaction-core {
 	display: block;
 	max-width:960px;
 	margin: 0 auto;
-	background-color:#FFF;
-	border:medium;
 }
 #content,
 .main-navigation,
@@ -402,11 +403,11 @@ body.custom-background #body-core {
 	display: block;
 	margin: 0 auto;
 	overflow: hidden;
-	/* -webkit-box-shadow: 0px 0px 5px 2px #CCC;
+	-webkit-box-shadow: 0px 0px 5px 2px #CCC;
 	-moz-box-shadow: 0px 0px 5px 2px #CCC;
 	-ms-box-shadow: 0px 0px 5px 2px #CCC;
 	-o-box-shadow: 0px 0px 5px 2px #CCC;
-	box-shadow: 0px 0px 5px 2px #CCC */
+	box-shadow: 0px 0px 5px 2px #CCC
 }
 
 
@@ -593,7 +594,7 @@ li.pag-next {
 }
 #pre-header .header-links .menu-hover > a,
 #pre-header .header-links > ul > li > a:hover {
-	color: #f24875;
+	color: white;
 }
 #pre-header .header-links li a,
 #pre-header-social li,
@@ -812,9 +813,9 @@ color: #FFF;
 	white-space: nowrap;
 }
 .main-navigation .sub-menu .sub-menu {
-	position:absolute;
+	position: absolute;
 	top: -1px;
-	left:100%;
+	left: 100%;
 }
 .main-navigation ul ul :hover > a {
 }
@@ -1486,8 +1487,6 @@ ul.pricing-table:after,
 	border-top: 6px solid #F33F3F;
 	border-bottom: 1px solid #111;
 	padding: 15px 10px;
-	width:100%;
-	
 }
 #footer-core h3 {
 	color: #EEE;
@@ -1520,7 +1519,6 @@ ul.pricing-table:after,
 }
 #sub-footer-core {
 	padding: 0px 10px;
-	width:100%;
 }
 #sub-footer-core, 
 #sub-footer-core a {
@@ -2660,7 +2658,6 @@ li.pingback a {
 .page-template-template-parallax-php #content-core {
 	margin: 0;
 	max-width: 100%;
-	
 }
 .page-template-template-parallax-php .panel-grid {
 	padding: 30px 10px 0;

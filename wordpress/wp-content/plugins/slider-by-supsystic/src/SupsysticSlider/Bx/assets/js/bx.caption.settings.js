@@ -69,12 +69,13 @@
                 if($(this).is('.unselectedPreset')) {
                     $(this).css('border-bottom', '1px solid aqua');
                 }
-                $(this).find('div.bx-caption-preview').find('span').textillate();
+                $(this).find('div.bx-caption-preview').find('span[data-in-effect]').textillate('in');
             });
             $(this).on('mouseleave', function() {
                 if($(this).is('.unselectedPreset')) {
                     $(this).css('border-bottom', '1px solid gray');
                 }
+                $(this).find('div.bx-caption-preview').find('span[data-in-effect]').textillate('out');
             });
         });
         // Select Text in effect
@@ -90,12 +91,13 @@
                 if($(this).is('.unselectedPreset')) {
                     $(this).css('border-bottom', '1px solid aqua');
                 }
-                $(this).find('div.bx-caption-preview').find('span').textillate();
+                $(this).find('div.bx-caption-preview').find('span[data-out-effect]').textillate('in');
             });
             $(this).on('mouseleave', function() {
                 if($(this).is('.unselectedPreset')) {
                     $(this).css('border-bottom', '1px solid gray');
                 }
+                $(this).find('div.bx-caption-preview').find('span[data-out-effect]').textillate('out');
             });
         });
         // Select Text out effect
