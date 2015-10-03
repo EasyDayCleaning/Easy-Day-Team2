@@ -197,7 +197,7 @@
         {% endif %}
         <p id="photo-desc-{{ image.id }}" class="tabcontent-{{ image.id }}" style="margin: 0;">
             {# <input type="text" name="description" value="" placeholder="Image description"/> #}
-            <textarea name="description" style="height:60px;width:90%" placeholder="Image description">{{ image.attachment.description|replace({"\n":' ', "\r":' '}) }}</textarea>
+            <textarea name="description" style="height:60px;width:90%" placeholder="Image description">{{ image.attachment.description }}</textarea>
         </p>
         <p id="photo-link-{{ image.id }}" class="tabcontent-{{ image.id }}" style="margin: 0;" hidden>
             <input type="text" name="link" value="{{ image.attachment.external_link }}" style="margin-bottom: 5px;" placeholder="Image link"/><br>
@@ -205,7 +205,7 @@
             <label for="link_in_a_new_window" style="margin-left: 5px;">Open link in a new window</label>
         </p>
         <p id="photo-seo-{{ image.id }}" class="tabcontent-{{ image.id }}" style="margin: 0;" hidden>
-            <textarea name="seo" style="height:60px;width:90%" placeholder="Image alt">{{ image.attachment.seo|replace({"\n":' ', "\r":' '}) }}</textarea>
+            <textarea name="seo" style="height:60px;width:90%" placeholder="Image alt">{{ image.attachment.seo }}</textarea>
         </p>
         {% if slider.plugin == 'jssor' %}
             <p id="photo-html-{{ image.id }}" class="tabcontent-{{ image.id }}" style="margin: 0;" hidden>
