@@ -18,7 +18,7 @@ function ewic_pricing_table() {
 
     <div class="wrap">
         <div id="icon-edit" class="icon32 icon32-posts-easymedia"><br /></div>
-        <h2><?php _e('Comparison', 'easywic'); ?></h2>   
+        <h2><?php _e('Comparison', 'image-slider-widget'); ?></h2>   
   <div class="tsc_pricingtable03 tsc_pt3_style1" style="margin-bottom:110px; height:850px;">
     <div class="caption_column">
       <ul>
@@ -28,7 +28,7 @@ function ewic_pricing_table() {
         </li> 
         <li class="row_style_2"><span>License</span></li>
         <li class="row_style_4"><span>Unlimited Slider</span></li>
-        <li class="row_style_2"><span>Slider on Widget</span></li>       
+        <li class="row_style_2"><span>Slider on Post, Page or Widget</span></li>       
         <li class="row_style_4"><span>Slider with Bottom Thumbnails</span><a target="_blank" href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-at-the-bottom/" style="text-decoration:underline !important;">DEMO</a></li>
         <li class="row_style_2"><span>Slider with Right Navigation</span><a target="_blank" href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-on-right/" style="text-decoration:underline !important;">DEMO</a></li>
         <li class="row_style_4"><span>Slider with Left Thumbnails</span><a target="_blank" href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-on-left/" style="text-decoration:underline !important;">DEMO</a></li>

@@ -10,13 +10,22 @@
 <body <?php body_class(); ?>>
 <div class="wrapper">
 <!-- BEGIN HEADER -->
-	<div id="header">  
+	<div id="header">
     <div id="header-inner" class="clearfix">
-      <div id="logo">
-			<img src="images/header.png" width="1117" height="150">	
+		<div id="logo">
+			<?php if (of_get_option( 'esell_logo' )): ?>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo of_get_option( 'esell_logo' ); ?>"  alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/></a>
+      			<?php else : ?>        
+            <h1 class="site-title">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+      
+    <?php endif; ?>
+	
 		</div>
-		
-</div> 
+		<?php if (class_exists('woocommerce')) {load_template(get_template_directory() . '/wooacc.php'); }else { ?><div id="search"><?php get_search_form(); ?></div><?php } ?> 
+				
+	    </div> 	</div> 
 	<!-- BEGIN TOP NAVIGATION -->		
 	<div id="navigation" class="nav"> 
     <div id="navigation-inner" class="clearfix">

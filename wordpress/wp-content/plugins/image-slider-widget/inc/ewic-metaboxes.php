@@ -325,12 +325,12 @@ function ewic_metabox_work(){
 // Image Picker
 	    $meta_box = array(
 		'id' => 'ewic_meta_images',
-		'title' =>  __( 'Select/Upload Images', 'easywic' ),
-		'description' => __( '<span class="ewic-introjs"><span class="ewic-intro-help"></span><a href="javascript:void(0);" onclick="startIntro();">Click Here to learn How to Create Slider</a></span><br /><br />Click <strong><i>Add Images</i></strong> button below and select an images that you want to show in your widget area.<br />Press <strong>Ctrl + click on each images</strong> to select multiple images.', 'easywic' ),
+		'title' =>  __( 'Select/Upload Images', 'image-slider-widget' ),
+		'description' => __( '<span class="ewic-introjs"><span class="ewic-intro-help"></span><a href="javascript:void(0);" onclick="startIntro();">Click Here to learn How to Create Slider</a></span><br /><br />Click <strong><i>Add Images</i></strong> button below and select an images that you want to show in your widget area.<br />Press <strong>Ctrl + click on each images</strong> to select multiple images.', 'image-slider-widget' ),
 		/*'description' => __( '<span class="ewic-introjs"><span class="ewic-intro-help"></span><a href="javascript:void(0);" onclick="startIntro();">Click Here to learn How to Create Slider</a></span><br /><br /><div class="ewicinfobox">Upgrade to PRO VERSION and you will get awesome slider options like <a href="http://demo.ghozylab.com/content/ewicpro.html?utm_source=procp&utm_medium=settingspage&utm_campaign=gotodemoprocp" target="_blank">this</a>. You will able to create elegant slider like the following example:<ul><li><a href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-at-the-bottom/" target="_blank">Image Slider with Thumbnails at The Bottom
 </a></li><li><a href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-bullet-navigation/" target="_blank">Image Slider with Bullet Navigation
 </a></li><li><a href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-on-left/" target="_blank">Image Slider with Thumbnails on Left
-</a></li><li><a href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-on-right/" target="_blank">Image Slider with Thumbnails on Right</a></li></ul></div><br /><br />Click <strong><i>Add Images</i></strong> button below and select an images that you want to show in your widget area.<br />Press <strong>Ctrl + click on each images</strong> to select multiple images.', 'easywic' ),*/
+</a></li><li><a href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-on-right/" target="_blank">Image Slider with Thumbnails on Right</a></li></ul></div><br /><br />Click <strong><i>Add Images</i></strong> button below and select an images that you want to show in your widget area.<br />Press <strong>Ctrl + click on each images</strong> to select multiple images.', 'image-slider-widget' ),*/
 		'page' => 'easyimageslider',
 		'context' => 'normal',
 		'priority' => 'default',
@@ -338,9 +338,9 @@ function ewic_metabox_work(){
 		
 			array(
 		
-					'name' => __( '', 'easywic' ),
+					'name' => '',
 					'isfull' => 'yes',
-					'desc' => __( '', 'easywic' ),
+					'desc' => '',
 					'id' => 'ewic_meta_select_images',
 					'type' => 'imagepicker',
 					'std' => ''
@@ -355,16 +355,16 @@ function ewic_metabox_work(){
 // Config 	
 	    $meta_box = array(
 		'id' => 'ewic_meta_settings',
-		'title' =>  __( 'Settings', 'easywic' ),
-		'description' => __( 'You can change the look of your image slider to fit your needs here.<br /><div class="ewicinfobox">Upgrade to PRO VERSION and you will get awesome slider options like <a href="http://demo.ghozylab.com/content/ewicpro.html" target="_blank">this screenshot</a></div>', 'easywic' ),
+		'title' =>  __( 'Settings', 'image-slider-widget' ),
+		'description' => __( 'You can change the look of your image slider to fit your needs here.<br /><div class="ewicinfobox">Upgrade to PRO VERSION and you will get awesome slider options like <a href="http://demo.ghozylab.com/content/ewicpro.html" target="_blank">this screenshot</a></div>', 'image-slider-widget' ),
 		'page' => 'easyimageslider',
 		'context' => 'normal',
 		'priority' => 'default',
 		'fields' => array(
 		
 			array(
-					'name' => __( 'Slider Size', 'easywic' ),
-					'desc' => __( 'Use this option to set Slider custom width and height. We recommend to set AUTO for height.', 'easywic' ),
+					'name' => __( 'Slider Size', 'image-slider-widget' ),
+					'desc' => __( 'Use this option to set Slider custom width and height. We recommend to set AUTO for height.', 'image-slider-widget' ),
 					'id' => 'ewic_meta_thumbsizelt',
 					'type' => 'customsize',
 					'width' => 'tw',
@@ -375,24 +375,24 @@ function ewic_metabox_work(){
 					),
 					
 			array(
-					'name' => __( 'Use Timthumb', 'easywic' ),
-					'desc' => __( 'Using Timthumb can load slider images more faster but make sure your hosting / server support for use Timthumb and your slider width must be use spesific size ( not auto ) and we recommend you to set slider height to auto.<span data-tnonce="'.wp_create_nonce( 'ewic-tt-nonce' ).'" style="color:#0073AA; width: auto;" data-ucheck="'.dirname(__FILE__).'/class/cache/'.time().'.txt'.'" id="ewic-tt-check">Click here to Check Timthumb Compatibility</span>', 'easywic' ),
+					'name' => __( 'Use Timthumb', 'image-slider-widget' ),
+					'desc' => __( 'Using Timthumb can load slider images more faster but make sure your hosting / server support for use Timthumb and your slider width must be use spesific size ( not auto ) and we recommend you to set slider height to auto.<span data-tnonce="'.wp_create_nonce( 'ewic-tt-nonce' ).'" style="color:#0073AA; width: auto;" data-ucheck="'.dirname(__FILE__).'/class/cache/'.time().'.txt'.'" id="ewic-tt-check">Click here to Check Timthumb Compatibility</span>', 'image-slider-widget' ),
 					'id' => 'ewic_meta_slide_timthumb',
 					'type' => 'checkbox',
 					'std' => 'off'
 					),	
 				 
 			array(
-					'name' => __( 'Auto Slide', 'easywic' ),
-					'desc' => __( 'If ON slides will automatically transition / play.', 'easywic' ),
+					'name' => __( 'Auto Slide', 'image-slider-widget' ),
+					'desc' => __( 'If ON slides will automatically transition / play.', 'image-slider-widget' ),
 					'id' => 'ewic_meta_slide_auto',
 					'type' => 'checkbox',
 					'std' => 'on'
 					),	
 				 
 			array(
-					'name' => __( 'Slider Delay', 'easywic' ),
-					'desc' => __( 'The amount of time (in sec) between each auto transition. Default : 5 sec', 'easywic' ),
+					'name' => __( 'Slider Delay', 'image-slider-widget' ),
+					'desc' => __( 'The amount of time (in sec) between each auto transition. Default : 5 sec', 'image-slider-widget' ),
 					'id' => 'ewic_meta_slide_delay',
 					'type' => 'slider',
 					'std' => '5',
@@ -404,9 +404,9 @@ function ewic_metabox_work(){
 					),	
 					
 			array(
-					'name' => __( 'Slider Effect / Easing', 'easywic' ),
+					'name' => __( 'Slider Effect / Easing', 'image-slider-widget' ),
 					'isfull' => 'no',
-					'desc' => __( 'Choose an entrance animation or effect and pass it to the slider. Default : easeInOutCubic', 'easywic' ),
+					'desc' => __( 'Choose an entrance animation or effect and pass it to the slider. Default : easeInOutCubic', 'image-slider-widget' ),
 					'id' => 'ewic_meta_settings_effect',
 					'type' => 'select',
 					'options' => array( "easeInQuad", "easeOutQuad", "easeInOutQuad", "easeInCubic", "easeOutCubic", "easeInOutCubic", "easeInQuart", "easeOutQuart", "easeInOutQuart", "easeInQuint", "easeOutQuint", "easeInOutQuint", "easeInSine", "easeOutSine", "easeInOutSine", "easeInExpo", "easeOutExpo", "easeInOutExpo", "easeInCirc", "easeOutCirc", "easeInOutCirc", "easeInElastic" , "easeOutElastic", "easeInOutElastic", "easeInBack", "easeOutBack", "easeInOutBack", "easeInBounce", "easeOutBounce", "easeInOutBounce"),
@@ -415,8 +415,8 @@ function ewic_metabox_work(){
 					
 					
 			array(
-					'name' => __( 'Slider Style', 'easywic' ),
-					'desc' => __( 'You can set the slider style to fade, move vertical or horizontal. Default: Horizontal', 'easywic' ),
+					'name' => __( 'Slider Style', 'image-slider-widget' ),
+					'desc' => __( 'You can set the slider style to fade, move vertical or horizontal. Default: Horizontal', 'image-slider-widget' ),
 					'id' => 'ewic_meta_slide_style',
 					'type' => 'radio',
 					'options' => array (	
@@ -427,8 +427,8 @@ function ewic_metabox_work(){
 					),
 					
 			array(
-					'name' => __( 'Navigation Button', 'easywic' ),
-					'desc' => __( 'You can set the navigation button style here. Default: Always Show', 'easywic' ),
+					'name' => __( 'Navigation Button', 'image-slider-widget' ),
+					'desc' => __( 'You can set the navigation button style here. Default: Always Show', 'image-slider-widget' ),
 					'id' => 'ewic_meta_slide_nav',
 					'type' => 'radio',
 					'options' => array (	
@@ -438,40 +438,40 @@ function ewic_metabox_work(){
 					),
 					
 			array(
-					'name' => __( 'Show Titles ( if Available )', 'easywic' ),
-					'desc' => __( 'If ON your image title will appear on the bottom.', 'easywic' ),
+					'name' => __( 'Show Titles ( if Available )', 'image-slider-widget' ),
+					'desc' => __( 'If ON your image title will appear on the bottom.', 'image-slider-widget' ),
 					'id' => 'ewic_meta_slide_title',
 					'type' => 'checkbox',
 					'std' => 'on'
 					),	
 					
 			array(
-					'name' => __( 'Smart Title', 'easywic' ),
-					'desc' => __( 'If ON the plugin will automatically convert uppercase the first character of each word and replace - with spaces in a title. For example : ferrari-f12-berlinetta-interior will change to Ferrari F12 Berlinetta Interior', 'easywic' ),
+					'name' => __( 'Smart Title', 'image-slider-widget' ),
+					'desc' => __( 'If ON the plugin will automatically convert uppercase the first character of each word and replace - with spaces in a title. For example : ferrari-f12-berlinetta-interior will change to Ferrari F12 Berlinetta Interior', 'image-slider-widget' ),
 					'id' => 'ewic_meta_settings_smartttl',
 					'type' => 'checkbox',
 					'std' => 'off'
 					),	
 					
 			array(
-					'name' => __( 'Open an Images in a Lightbox', 'easywic' ),
-					'desc' => __( 'If ON, your images will displayed in a lightbox when clicked.', 'easywic' ),
+					'name' => __( 'Open an Images in a Lightbox', 'image-slider-widget' ),
+					'desc' => __( 'If ON, your images will displayed in a lightbox when clicked.', 'image-slider-widget' ),
 					'id' => 'ewic_meta_slide_lightbox',
 					'type' => 'checkbox',
 					'std' => 'on'
 					),
 					
 			array(
-					'name' => __( 'Lightbox Slideshow', 'easywic' ),
-					'desc' => __( 'If ON, the lightbox slideshow will play automatically.', 'easywic' ),
+					'name' => __( 'Lightbox Slideshow', 'image-slider-widget' ),
+					'desc' => __( 'If ON, the lightbox slideshow will play automatically.', 'image-slider-widget' ),
 					'id' => 'ewic_meta_slide_lightbox_autoslide',
 					'type' => 'checkbox',
 					'std' => 'on'
 					),
 					
 			array(
-					'name' => __( 'Lightbox Slideshow Interval ', 'easywic' ),
-					'desc' => __( 'The amount of time (in sec) between each slide. Default : 5 sec', 'easywic' ),
+					'name' => __( 'Lightbox Slideshow Interval ', 'image-slider-widget' ),
+					'desc' => __( 'The amount of time (in sec) between each slide. Default : 5 sec', 'image-slider-widget' ),
 					'id' => 'ewic_meta_slide_lightbox_delay',
 					'type' => 'slider',
 					'std' => '5',

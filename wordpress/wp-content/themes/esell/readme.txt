@@ -35,7 +35,7 @@ Theme option:
 
 Home Page:
 -Customize your home page here
--put woocommerce products and featured post
+-put WooCommerce products and featured post
 
 
 Advertise:
@@ -50,6 +50,12 @@ Custom Css:
 
 
 == Change log ==
+
+= 1.3.1.2 =
+* Final version with theme option
+* Added support for WordPress customizer
+* Fixed missing translation issue 
+* 
 
 = 1.3.1.1 =
 * Missing ID problem fix in widgets

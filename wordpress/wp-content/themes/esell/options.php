@@ -206,7 +206,7 @@ function optionsframework_options() {
 		$options[] = array(
 		'desc' => __('Put description about image or product here.', 'esell'),
 		'id' => 'esell_slidedesc',
-		'std' => 'Set you description here from theme options > home page link to any page and upload image here. This is only for demonstration purpose you can set your own description here. ',
+		'std' => __('Set you description here from theme options > home page link to any page and upload image here. This is only for demonstration purpose you can set your own description here.','esell'),
 		'type' => 'textarea');
 		
 		$options[] = array(
@@ -275,12 +275,12 @@ function optionsframework_options() {
 		$options[] = array(
 		'desc' => __('Put description about image or product here.', 'esell'),
 		'id' => 'esell_columndesc5',
-		'std' => 'Put description or feature detail here from theme option > home page and customize fonts',
+		'std' => __('Put description or feature detail here from theme option > home page and customize fonts','esell'),
 		'type' => 'textarea');
 		$options[] = array(
 		'desc' => __('Column 3 Heading 2', 'esell'),
 		'id' => 'esell_columnh6',
-		'std' => 'Column Title here',
+		'std' => __('Column Title here','esell'),
 		'type' => 'text');
 		$options[] = array(
 		'id' => 'esell_colimg6',
@@ -288,12 +288,12 @@ function optionsframework_options() {
 		$options[] = array(
 		'desc' => __('Put description about image or product here.', 'esell'),
 		'id' => 'esell_columndesc6',
-		'std' => 'Put description or feature detail here from theme option > home page and customize fonts',
+		'std' => __('Put description or feature detail here from theme option > home page and customize fonts','esell'),
 		'type' => 'textarea');
 		
 		
 		$options[] = array(
-		'desc' => __('<span class="pre-titlehome">Color Cutomize (Premium Only)</span>'), 
+		'desc' => __('<span class="pre-titlehome">Color Cutomize (Premium Only)</span>','esell'), 
 		'type' => 'info');
 		$options[] = array(
 		'name' => __('Numbers of Featured Woocommerce Products', 'esell'),
@@ -457,7 +457,7 @@ $options[] = array(
 	
 				
 		$options[] = array(
-		'desc' => __('<span class="pre-title">New Features [Pro Only]</span>'), 
+		'desc' => __('<span class="pre-title">New Features [Pro Only]</span>','esell'), 
 		'type' => 'info');
 		
 		$options[] = array(

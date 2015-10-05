@@ -5,6 +5,10 @@
 	include_once('baztro.php');
 	include_once('includes/installs.php');
 	include_once('includes/core/core.php');
+/**
+ * Implement the Custom Header feature.
+ */
+require get_template_directory() . '/includes/custom-header.php';
 	function esell_scripts() {
 		wp_enqueue_style( 'esell-style', get_stylesheet_uri() );
 
@@ -140,9 +144,9 @@ add_action('woocommerce_after_shop_loop_item', 'esell_readinfo');
 
  function esell_search_form( $form ) {
 	$form = '<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
-	<div><label class="screen-reader-text" for="s">' . __( 'Search for:','esell' ) . '</label>
+	<div><label class="screen-reader-text" for="s">' . esc_attr__( 'Search for:','esell' ) . '</label>
 	<input type="text" value="' . get_search_query() . '" name="s" id="s" />
-	<input type="submit" id="searchsubmit" value="'. esc_attr__( 'Go' ) .'" />
+	<input type="submit" id="searchsubmit" value="'. esc_attr__( 'Go','esell' ) .'" />
 	</div>
 	</form>';
 
@@ -215,4 +219,19 @@ add_action('widgets_init', 'esell_widgets_init');
 	           echo '</div>';
 	 }
 }
+
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/includes/customizer.php';
+
+/**
+ * Enqueue script for custom customize control.
+ */
+function esell_custom_customize_enqueue() {
+	wp_enqueue_style( 'customizer-css', get_stylesheet_directory_uri() . '/css/customizer-css.css' );
+}
+add_action( 'customize_controls_enqueue_scripts', 'esell_custom_customize_enqueue' );
+
 ?>

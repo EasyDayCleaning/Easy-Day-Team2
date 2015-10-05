@@ -66,10 +66,10 @@ class EWIC_Welcome {
     		add_submenu_page('edit.php?post_type=easyimageslider', 'Earn EXTRA MONEY', 'Earn EXTRA MONEY', $this->minimum_capability, 'ewic-earn-xtra-money', array( $this, 'earn_plugins_screen') );
 			
 			// Pricing Page
-			add_submenu_page('edit.php?post_type=easyimageslider', 'Pricing & compare tables', __('UPGRADE to PRO', 'easywic'), $this->minimum_capability, 'ewic-comparison', 'ewic_pricing_table');
+			add_submenu_page('edit.php?post_type=easyimageslider', 'Pricing & compare tables', __('UPGRADE to PRO', 'image-slider-widget'), $this->minimum_capability, 'ewic-comparison', 'ewic_pricing_table');
 			
 			// Settings Page
-			add_submenu_page('edit.php?post_type=easyimageslider', 'Global Settings', __('Global Settings', 'easywic'), $this->minimum_capability, 'ewic-settings-page', 'ewic_stt_page');
+			add_submenu_page('edit.php?post_type=easyimageslider', 'Global Settings', __('Global Settings', 'image-slider-widget'), $this->minimum_capability, 'ewic-settings-page', 'ewic_stt_page');
 			
 				
 	}
@@ -202,25 +202,25 @@ class EWIC_Welcome {
 		?>
 		<h2 class="nav-tab-wrapper">
 			<a class="nav-tab <?php echo $selected == 'ewic-whats-new' ? 'nav-tab-active' : ''; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'ewic-whats-new' ), 'edit.php?post_type=easyimageslider' ) ) ); ?>">
-				<?php _e( "What's New", 'easywic' ); ?>
+				<?php _e( "What's New", 'image-slider-widget' ); ?>
 			</a>
 			<a class="nav-tab <?php echo $selected == 'ewic-getting-started' ? 'nav-tab-active' : ''; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'ewic-getting-started' ), 'edit.php?post_type=easyimageslider' ) ) ); ?>">
-				<?php _e( 'Getting Started', 'easywic' ); ?>
+				<?php _e( 'Getting Started', 'image-slider-widget' ); ?>
 			</a>
 			<a class="nav-tab <?php echo $selected == 'ewic-addons' ? 'nav-tab-active' : ''; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'ewic-addons' ), 'edit.php?post_type=easyimageslider' ) ) ); ?>">
-				<?php _e( 'Addons', 'easywic' ); ?>
+				<?php _e( 'Addons', 'image-slider-widget' ); ?>
 			</a>
             
 			<a class="nav-tab <?php echo $selected == 'ewic-free-plugins' ? 'nav-tab-active' : ''; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'ewic-free-plugins' ), 'edit.php?post_type=easyimageslider' ) ) ); ?>">
-				<?php _e( 'Free Plugins', 'easywic' ); ?>
+				<?php _e( 'Free Plugins', 'image-slider-widget' ); ?>
 			</a>
             
 			<a class="nav-tab <?php echo $selected == 'ewic-premium-plugins' ? 'nav-tab-active' : ''; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'ewic-premium-plugins' ), 'edit.php?post_type=easyimageslider' ) ) ); ?>">
-				<?php _e( 'Premium Plugins', 'easywic' ); ?>
+				<?php _e( 'Premium Plugins', 'image-slider-widget' ); ?>
 			</a>
             
 			<a class="nav-tab <?php echo $selected == 'ewic-earn-xtra-money' ? 'nav-tab-active' : ''; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'ewic-earn-xtra-money' ), 'edit.php?post_type=easyimageslider' ) ) ); ?>">
-				<?php _e( '<span class="ewic-dollar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extra</span>', 'easywic' ); ?>
+				<?php _e( '<span class="ewic-dollar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extra</span>', 'image-slider-widget' ); ?>
 			</a>
           
             
@@ -240,65 +240,65 @@ class EWIC_Welcome {
 		list( $display_version ) = explode( '-', EWIC_VERSION );
 		?>
 		<div class="wrap about-wrap">
-			<h1><?php printf( __( 'Welcome to '.EWIC_NAME.'', 'easywic' ), $display_version ); ?></h1>
-			<div class="about-text"><?php printf( __( 'Thank you for installing '.EWIC_NAME.'. This plugin is ready to make your slider more fancy and better!', 'easywic' ), $display_version ); ?></div>
-			<div class="ewic-badge"><?php printf( __( 'Version %s', 'easywic' ), $display_version ); ?></div>
+			<h1><?php printf( __( 'Welcome to '.EWIC_NAME.'', 'image-slider-widget' ), $display_version ); ?></h1>
+			<div class="about-text"><?php printf( __( 'Thank you for installing '.EWIC_NAME.'. This plugin is ready to make your slider more fancy and better!', 'image-slider-widget' ), $display_version ); ?></div>
+			<div class="ewic-badge"><?php printf( __( 'Version %s', 'image-slider-widget' ), $display_version ); ?></div>
 
 			<?php $this->ewic_tabs(); ?>
             
             <?php ewic_lite_get_news();  ?>
 
 			<div class="ewic-container-cnt">
-				<h3 class="customh3"><?php _e( 'New Welcome Page', 'easywic' );?></h3>
+				<h3 class="customh3"><?php _e( 'New Welcome Page', 'image-slider-widget' );?></h3>
 
 				<div class="feature-section">
 
-					<p><?php _e( 'Version 1.1.15 introduces a comprehensive welcome page interface. The easy way to get important informations about this product and other related plugins.', 'easywic' );?></p>
+					<p><?php _e( 'Version 1.1.15 introduces a comprehensive welcome page interface. The easy way to get important informations about this product and other related plugins.', 'image-slider-widget' );?></p>
                     
-					<p><?php _e( 'In this page, you will find four important Tabs named Getting Started, Addons, Free Plugins, Premium Plugins and Extra.', 'easywic' );?></p>
+					<p><?php _e( 'In this page, you will find four important Tabs named Getting Started, Addons, Free Plugins, Premium Plugins and Extra.', 'image-slider-widget' );?></p>
 
 				</div>
 			</div>
 
 			<div class="ewic-container-cnt">
-				<h3 class="customh3"><?php _e( 'ADDONS', 'easywic' );?></h3>
+				<h3 class="customh3"><?php _e( 'ADDONS', 'image-slider-widget' );?></h3>
 
 				<div class="feature-section">
 
-					<p><?php _e( 'Need some Pro version features to be applied in your Free version? What you have to do just go to <strong>Addons</strong> page and choose any Addons that you want to install. All listed addons are Premium version.', 'easywic' );?></p>
+					<p><?php _e( 'Need some Pro version features to be applied in your Free version? What you have to do just go to <strong>Addons</strong> page and choose any Addons that you want to install. All listed addons are Premium version.', 'image-slider-widget' );?></p>
 
 				</div>
 			</div>
 
 			<div class="ewic-container-cnt">
-				<h3><?php _e( 'Additional Updates', 'easywic' );?></h3>
+				<h3><?php _e( 'Additional Updates', 'image-slider-widget' );?></h3>
 
 				<div class="feature-section col three-col">
 					<div>
 
-						<h4><?php _e( 'CSS Clean and Optimization', 'easywic' );?></h4>
-						<p><?php _e( 'We\'ve improved some css class to make your slider for look fancy and better.', 'easywic' );?></p>
+						<h4><?php _e( 'CSS Clean and Optimization', 'image-slider-widget' );?></h4>
+						<p><?php _e( 'We\'ve improved some css class to make your slider for look fancy and better.', 'image-slider-widget' );?></p>
 
 					</div>
 
 					<div>
 
-						<h4><?php _e( 'Disable Notifications', 'easywic' );?></h4>
-						<p><?php _e( 'In this version you will no longer see some annoying notifications in top of slider editor page. Thanks for who suggested it.' ,'easywic' );?></p>
+						<h4><?php _e( 'Disable Notifications', 'image-slider-widget' );?></h4>
+						<p><?php _e( 'In this version you will no longer see some annoying notifications in top of slider editor page. Thanks for who suggested it.' ,'image-slider-widget' );?></p>
                         
 					</div>
 
 					<div class="last-feature">
 
-						<h4><?php _e( 'Improved Several Function', 'easywic' );?></h4>
-						<p><?php _e( 'Slider function has been improved to be more robust and fast so you can create slider only in minutes.', 'easywic' );?></p>
+						<h4><?php _e( 'Improved Several Function', 'image-slider-widget' );?></h4>
+						<p><?php _e( 'Slider function has been improved to be more robust and fast so you can create slider only in minutes.', 'image-slider-widget' );?></p>
 
 					</div>
 
 				</div>
 			</div>
 
-			<div class="return-to-dashboard">&middot;<a href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'ewic-changelog' ), 'edit.php?post_type=easyimageslider' ) ) ); ?>"><?php _e( 'View the Full Changelog', 'easywic' ); ?></a>
+			<div class="return-to-dashboard">&middot;<a href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'ewic-changelog' ), 'edit.php?post_type=easyimageslider' ) ) ); ?>"><?php _e( 'View the Full Changelog', 'image-slider-widget' ); ?></a>
 			</div>
 		</div>
 		<?php
@@ -315,14 +315,14 @@ class EWIC_Welcome {
 		list( $display_version ) = explode( '-', EWIC_VERSION );
 		?>
 		<div class="wrap about-wrap">
-			<h1><?php _e( EWIC_NAME. ' Changelog', 'easywic' ); ?></h1>
-			<div class="about-text"><?php printf( __( 'Thank you for installing '.EWIC_NAME.'. This plugin is ready to make your slider more fancy and better!', 'easywic' ), $display_version ); ?></div>
-			<div class="ewic-badge"><?php printf( __( 'Version %s', 'easywic' ), $display_version ); ?></div>
+			<h1><?php _e( EWIC_NAME. ' Changelog', 'image-slider-widget' ); ?></h1>
+			<div class="about-text"><?php printf( __( 'Thank you for installing '.EWIC_NAME.'. This plugin is ready to make your slider more fancy and better!', 'image-slider-widget' ), $display_version ); ?></div>
+			<div class="ewic-badge"><?php printf( __( 'Version %s', 'image-slider-widget' ), $display_version ); ?></div>
 
 			<?php $this->ewic_tabs(); ?>
 
 			<div class="ewic-container-cnt">
-				<h3><?php _e( 'Full Changelog', 'easywic' );?></h3>
+				<h3><?php _e( 'Full Changelog', 'image-slider-widget' );?></h3>
 				<div>
 					<?php echo $this->parse_readme(); ?>
 				</div>
@@ -343,13 +343,13 @@ class EWIC_Welcome {
 		list( $display_version ) = explode( '-', EWIC_VERSION );
 		?>
 		<div class="wrap about-wrap">
-			<h1><?php printf( __( 'Welcome to '.EWIC_NAME.'', 'easywic' ), $display_version ); ?></h1>
-			<div class="about-text"><?php printf( __( 'Thank you for installing '.EWIC_NAME.'. This plugin is ready to make your slider more fancy and better!', 'easywic' ), $display_version ); ?></div>
-			<div class="ewic-badge"><?php printf( __( 'Version %s', 'easywic' ), $display_version ); ?></div>
+			<h1><?php printf( __( 'Welcome to '.EWIC_NAME.'', 'image-slider-widget' ), $display_version ); ?></h1>
+			<div class="about-text"><?php printf( __( 'Thank you for installing '.EWIC_NAME.'. This plugin is ready to make your slider more fancy and better!', 'image-slider-widget' ), $display_version ); ?></div>
+			<div class="ewic-badge"><?php printf( __( 'Version %s', 'image-slider-widget' ), $display_version ); ?></div>
 
 			<?php $this->ewic_tabs(); ?>
 
-			<p class="about-description"><?php _e( 'There are no complicated instructions for using '.EWIC_NAME.' plugin because this plugin designed to make all easy. Please watch the following video and we believe that you will easily to understand it just in minutes :', 'easywic' ); ?></p>
+			<p class="about-description"><?php _e( 'There are no complicated instructions for using '.EWIC_NAME.' plugin because this plugin designed to make all easy. Please watch the following video and we believe that you will easily to understand it just in minutes :', 'image-slider-widget' ); ?></p>
 
 			<div class="ewic-container-cnt">
 				<div class="feature-section">
@@ -358,26 +358,26 @@ class EWIC_Welcome {
             </div>
 
 			<div class="ewic-container-cnt">
-				<h3><?php _e( 'Need Help?', 'easywic' );?></h3>
+				<h3><?php _e( 'Need Help?', 'image-slider-widget' );?></h3>
 
 				<div class="feature-section">
 
-					<h4><?php _e( 'Phenomenal Support','easywic' );?></h4>
-					<p><?php _e( 'We do our best to provide the best support we can. If you encounter a problem or have a question, post a question in the <a href="https://wordpress.org/support/plugin/image-slider-widget" target="_blank">support forums</a>.', 'easywic' );?></p>
+					<h4><?php _e( 'Phenomenal Support','image-slider-widget' );?></h4>
+					<p><?php _e( 'We do our best to provide the best support we can. If you encounter a problem or have a question, post a question in the <a href="https://wordpress.org/support/plugin/image-slider-widget" target="_blank">support forums</a>.', 'image-slider-widget' );?></p>
 
-					<h4><?php _e( 'Need Even Faster Support?', 'easywic' );?></h4>
-					<p><?php _e( 'Just upgrade to <a target="_blank" href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/pricing/">Pro version</a> and you will get Priority Support are there for customers that need faster and/or more in-depth assistance.', 'easywic' );?></p>
+					<h4><?php _e( 'Need Even Faster Support?', 'image-slider-widget' );?></h4>
+					<p><?php _e( 'Just upgrade to <a target="_blank" href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/pricing/">Pro version</a> and you will get Priority Support are there for customers that need faster and/or more in-depth assistance.', 'image-slider-widget' );?></p>
 
 				</div>
 			</div>
 
 			<div class="ewic-container-cnt">
-				<h3><?php _e( 'Stay Up to Date', 'easywic' );?></h3>
+				<h3><?php _e( 'Stay Up to Date', 'image-slider-widget' );?></h3>
 
 				<div class="feature-section">
 
-					<h4><?php _e( 'Get Notified of Addons Releases','easywic' );?></h4>
-					<p><?php _e( 'New Addons that make '.EWIC_NAME.' even more powerful are released nearly every single week. Subscribe to the newsletter to stay up to date with our latest releases. <a target="_blank" href="http://eepurl.com/bq3RcP" target="_blank">Signup now</a> to ensure you do not miss a release!', 'easywic' );?></p>
+					<h4><?php _e( 'Get Notified of Addons Releases','image-slider-widget' );?></h4>
+					<p><?php _e( 'New Addons that make '.EWIC_NAME.' even more powerful are released nearly every single week. Subscribe to the newsletter to stay up to date with our latest releases. <a target="_blank" href="http://eepurl.com/bq3RcP" target="_blank">Signup now</a> to ensure you do not miss a release!', 'image-slider-widget' );?></p>
 
 				</div>
 			</div>
@@ -399,9 +399,9 @@ class EWIC_Welcome {
 		list( $display_version ) = explode( '-', EWIC_VERSION );
 		?>
 		<div class="wrap about-wrap">
-			<h1><?php printf( __( 'Welcome to '.EWIC_NAME.'', 'easywic' ), $display_version ); ?></h1>
-			<div class="about-text"><?php printf( __( 'Thank you for installing '.EWIC_NAME.'. This plugin is ready to make your slider more fancy and better!', 'easywic' ), $display_version ); ?></div>
-			<div class="ewic-badge"><?php printf( __( 'Version %s', 'easywic' ), $display_version ); ?></div>
+			<h1><?php printf( __( 'Welcome to '.EWIC_NAME.'', 'image-slider-widget' ), $display_version ); ?></h1>
+			<div class="about-text"><?php printf( __( 'Thank you for installing '.EWIC_NAME.'. This plugin is ready to make your slider more fancy and better!', 'image-slider-widget' ), $display_version ); ?></div>
+			<div class="ewic-badge"><?php printf( __( 'Version %s', 'image-slider-widget' ), $display_version ); ?></div>
 
 			<?php $this->ewic_tabs(); ?>
 
@@ -428,9 +428,9 @@ class EWIC_Welcome {
 		list( $display_version ) = explode( '-', EWIC_VERSION );
 		?>
 		<div class="wrap about-wrap" id="ghozy-featured">
-			<h1><?php printf( __( 'Welcome to '.EWIC_NAME.'', 'easywic' ), $display_version ); ?></h1>
-			<div class="about-text"><?php printf( __( 'Thank you for installing '.EWIC_NAME.'. This plugin is ready to make your slider more fancy and better!', 'easywic' ), $display_version ); ?></div>
-			<div class="ewic-badge"><?php printf( __( 'Version %s', 'easywic' ), $display_version ); ?></div>
+			<h1><?php printf( __( 'Welcome to '.EWIC_NAME.'', 'image-slider-widget' ), $display_version ); ?></h1>
+			<div class="about-text"><?php printf( __( 'Thank you for installing '.EWIC_NAME.'. This plugin is ready to make your slider more fancy and better!', 'image-slider-widget' ), $display_version ); ?></div>
+			<div class="ewic-badge"><?php printf( __( 'Version %s', 'image-slider-widget' ), $display_version ); ?></div>
 
 			<?php $this->ewic_tabs(); ?>
 
@@ -459,9 +459,9 @@ class EWIC_Welcome {
 		list( $display_version ) = explode( '-', EWIC_VERSION );
 		?>
 		<div class="wrap about-wrap" id="ghozy-addons">
-			<h1><?php printf( __( 'Welcome to '.EWIC_NAME.'', 'easywic' ), $display_version ); ?></h1>
-			<div class="about-text"><?php printf( __( 'Thank you for installing '.EWIC_NAME.'. This plugin is ready to make your slider more fancy and better!', 'easywic' ), $display_version ); ?></div>
-			<div class="ewic-badge"><?php printf( __( 'Version %s', 'easywic' ), $display_version ); ?></div>
+			<h1><?php printf( __( 'Welcome to '.EWIC_NAME.'', 'image-slider-widget' ), $display_version ); ?></h1>
+			<div class="about-text"><?php printf( __( 'Thank you for installing '.EWIC_NAME.'. This plugin is ready to make your slider more fancy and better!', 'image-slider-widget' ), $display_version ); ?></div>
+			<div class="ewic-badge"><?php printf( __( 'Version %s', 'image-slider-widget' ), $display_version ); ?></div>
 
 			<?php $this->ewic_tabs(); ?>
 
@@ -490,9 +490,9 @@ class EWIC_Welcome {
 		list( $display_version ) = explode( '-', EWIC_VERSION );
 		?>
 		<div class="wrap about-wrap" id="ghozy-addons">
-			<h1><?php printf( __( 'Welcome to '.EWIC_NAME.'', 'easywic' ), $display_version ); ?></h1>
-			<div class="about-text"><?php printf( __( 'Thank you for installing '.EWIC_NAME.'. This plugin is ready to make your slider more fancy and better!', 'easywic' ), $display_version ); ?></div>
-			<div class="ewic-badge"><?php printf( __( 'Version %s', 'easywic' ), $display_version ); ?></div>
+			<h1><?php printf( __( 'Welcome to '.EWIC_NAME.'', 'image-slider-widget' ), $display_version ); ?></h1>
+			<div class="about-text"><?php printf( __( 'Thank you for installing '.EWIC_NAME.'. This plugin is ready to make your slider more fancy and better!', 'image-slider-widget' ), $display_version ); ?></div>
+			<div class="ewic-badge"><?php printf( __( 'Version %s', 'image-slider-widget' ), $display_version ); ?></div>
 
 			<?php $this->ewic_tabs(); ?>
 
@@ -518,7 +518,7 @@ class EWIC_Welcome {
 		$file = file_exists( EWIC_PLUGIN_DIR . 'readme.txt' ) ? EWIC_PLUGIN_DIR . 'readme.txt' : null;
 
 		if ( ! $file ) {
-			$readme = '<p>' . __( 'No valid changlog was found.', 'easywic' ) . '</p>';
+			$readme = '<p>' . __( 'No valid changlog was found.', 'image-slider-widget' ) . '</p>';
 		} else {
 			$readme = file_get_contents( $file );
 			$readme = nl2br( esc_html( $readme ) );

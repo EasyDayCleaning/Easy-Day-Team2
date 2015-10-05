@@ -9,7 +9,6 @@
 			echo'</div>'; 
 		}
 	?>
-    <?php echo do_shortcode('[supsystic-slider id=1 position="center"]') ?>
 			<div id="content">
 					<?php if(have_posts()) : 
 						while(have_posts())  : the_post(); 
@@ -28,4 +27,3 @@
 				</div> <!-- end div #content -->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-<?php echo do_shortcode('[supsystic-slider id=1 position="center"]') ?>

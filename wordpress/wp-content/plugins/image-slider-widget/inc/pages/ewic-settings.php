@@ -10,14 +10,14 @@ function ewic_stt_page() {
     <div class="wrap">
     <div class="metabox-holder">
 			<div class="postbox">
-            <h3 style="padding-bottom: 8px; border-bottom: 1px solid #CCC;"><span class="setpre"></span><?php _e( 'Global Settings', 'easywic' ); ?></h3>
+            <h3 style="padding-bottom: 8px; border-bottom: 1px solid #CCC;"><span class="setpre"></span><?php _e( 'Global Settings', 'image-slider-widget' ); ?></h3>
             <form id="easywic_settings">
             <div style="padding: 5px 15px 15px 15px;">
-            <h4><?php _e( "Auto Update Plugin", "easywic" ); ?> :</h4>
+            <h4><?php _e( "Auto Update Plugin", "image-slider-widget" ); ?> :</h4>
             <div style="margin-top: 10px;">
 			<?php $ewic_opt_updt = get_option("ewic-settings-automatic_update"); ?>
-            <input type="radio" name="ewic_sett_autoupd" onclick="ewic_ajax_autoupdt(this);" <?php echo $ewic_opt_updt == "active" ? "checked=\"checked\"" : "";?> value="active"><label style="vertical-align: baseline;"><?php _e( "Enable", "easywic" ); ?></label>
-            <input type="radio" name="ewic_sett_autoupd" onclick="ewic_ajax_autoupdt(this);" <?php echo $ewic_opt_updt == "inactive" ? "checked=\"checked\"" : "";?> style="margin-left: 10px;" value="inactive"><label style="vertical-align: baseline;"><?php _e( "Disable", "easywic" ); ?></label>
+            <input type="radio" name="ewic_sett_autoupd" onclick="ewic_ajax_autoupdt(this);" <?php echo $ewic_opt_updt == "active" ? "checked=\"checked\"" : "";?> value="active"><label style="vertical-align: baseline;"><?php _e( "Enable", "image-slider-widget" ); ?></label>
+            <input type="radio" name="ewic_sett_autoupd" onclick="ewic_ajax_autoupdt(this);" <?php echo $ewic_opt_updt == "inactive" ? "checked=\"checked\"" : "";?> style="margin-left: 10px;" value="inactive"><label style="vertical-align: baseline;"><?php _e( "Disable", "image-slider-widget" ); ?></label>
             </div>
             </div>
             </form>
@@ -26,7 +26,7 @@ function ewic_stt_page() {
     
     <div class="metabox-holder">
 			<div class="postbox">
-            <h3 style="padding-bottom: 8px; border-bottom: 1px solid #CCC;"><?php _e( 'Check this out!', 'easywic' ); ?></h3>
+            <h3 style="padding-bottom: 8px; border-bottom: 1px solid #CCC;"><?php _e( 'Check this out!', 'image-slider-widget' ); ?></h3>
            <a href="http://ghozylab.com/plugins/easy-media-gallery-pro/demo/best-gallery-and-photo-albums-demo/" target="_blank"><img style="margin: 10px 0px 10px 10px" src="<?php echo plugins_url( 'images/banners/emg_red_728x90.png', dirname( __FILE__ ) ); ?>" width="728" height="90" /></a>
            </div>
 		</div>

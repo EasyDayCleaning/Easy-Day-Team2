@@ -12,7 +12,7 @@ function ewic_get_feed() {
 				set_transient( 'easysliderwidget_featured_feed', $cache, 3600 );
 			}
 		} else {
-			$cache = '<div class="error"><p>' . __( 'There was an error retrieving the list from the server. Please try again later.', 'easywic' ) . '</div>';
+			$cache = '<div class="error"><p>' . __( 'There was an error retrieving the list from the server. Please try again later.', 'image-slider-widget' ) . '</div>';
 		}
 	}
 	return $cache;

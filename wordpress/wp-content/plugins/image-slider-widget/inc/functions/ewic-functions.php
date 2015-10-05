@@ -233,7 +233,7 @@ function easywic_update_notify () {
 	
     ?>
     <div class="error ewic-setupdate">
-        <p><?php _e( 'We recommend you to enable plugin Auto Update so you\'ll get the latest features and other important updates from <strong>'.EWIC_NAME.'</strong>.<br />Click <a href="#"><strong><span id="ewicdoautoupdate">here</span></strong></a> to enable Auto Update.', 'easywic' ); ?></p>
+        <p><?php _e( 'We recommend you to enable plugin Auto Update so you\'ll get the latest features and other important updates from <strong>'.EWIC_NAME.'</strong>.<br />Click <a href="#"><strong><span id="ewicdoautoupdate">here</span></strong></a> to enable Auto Update.', 'image-slider-widget' ); ?></p>
     </div>
     
 <script type="text/javascript">
@@ -316,7 +316,7 @@ function ewic_lite_get_news() {
 				set_transient( 'ewiclite_whats_new', $cache, 60 );
 			}
 		} else {
-			$cache = '<div class="error"><p>' . __( 'There was an error retrieving the list from the server. Please try again later.', 'easywic' ) . '</div>';
+			$cache = '<div class="error"><p>' . __( 'There was an error retrieving the list from the server. Please try again later.', 'image-slider-widget' ) . '</div>';
 		}
 	}
 	echo $cache;
@@ -390,8 +390,8 @@ function ewic_earn_xtra_money() {
 
 					<img src="<?php echo EWIC_URL . '/images/assets/aff-sc.jpg'; ?>" class="ewic-affiliate-screenshots"/>
 
-					<h4><?php _e( 'How does it work?', 'easywic' );?></h4>
-					<p><?php _e( 'After successfully registered with our Affiliate program what you have to do just :<ul style="margin-left: 30px;list-style-type: circle;"><li>Fill your Affiliate Account Email or Payment Email in field above and Hit Connect button</li><li>After connected you will see green connected status</li><li>Check your slider and you will find your affiliate link in the bottom of your slider like in the right side screenshot</li><li>Now when individuals follow that link and subsequently make a purchase, you will be credited for the transaction and you will receive a payout</li><li>Congratulations! You are ready to start to earn extra money :)</li></ul>', 'easywic' );?></p>
+					<h4><?php _e( 'How does it work?', 'image-slider-widget' );?></h4>
+					<p><?php _e( 'After successfully registered with our Affiliate program what you have to do just :<ul style="margin-left: 30px;list-style-type: circle;"><li>Fill your Affiliate Account Email or Payment Email in field above and Hit Connect button</li><li>After connected you will see green connected status</li><li>Check your slider and you will find your affiliate link in the bottom of your slider like in the right side screenshot</li><li>Now when individuals follow that link and subsequently make a purchase, you will be credited for the transaction and you will receive a payout</li><li>Congratulations! You are ready to start to earn extra money :)</li></ul>', 'image-slider-widget' );?></p>
                     </div>
     
 <?php        

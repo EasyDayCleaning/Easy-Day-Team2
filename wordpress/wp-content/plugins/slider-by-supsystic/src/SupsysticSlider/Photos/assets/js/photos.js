@@ -298,7 +298,7 @@
             });
         });
 
-        $('form.photo-editor input').on('focusout', function () {
+        $('form.photo-editor input, form.photo-editor textarea').on('focusout', function () {
             $(this).parents('form.photo-editor').trigger('submit');
         });
 

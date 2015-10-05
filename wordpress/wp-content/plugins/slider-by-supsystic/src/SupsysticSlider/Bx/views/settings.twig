@@ -29,7 +29,7 @@
             </label>
         </th>
         <td>
-            {% for value in ['disable', 'enable'] %}
+            {% for value in ['enable', 'disable'] %}
                 <label style="margin-right: 10px;">
                     <input type="radio" name="general[auto]"
                            value="{{ value }}"
@@ -51,7 +51,7 @@
             </label>
         </th>
         <td>
-            {% for value in ['disable', 'enable'] %}
+            {% for value in ['enable', 'disable'] %}
                 <label style="margin-right: 10px;">
                     <input type="radio" name="general[slideshowControls]"
                            value="{{ value }}"
@@ -86,7 +86,7 @@
                         checked="checked"
                             {% endif %}/>
                         <span>
-                            {{ translate(value|replace({ 'true': 'Available', 'false': 'Disable' })) }}
+                            {{ translate(value|replace({ 'true': 'Enable', 'false': 'Disable' })) }}
                         </span>
                 </label>
             {% endfor %}

@@ -4,7 +4,9 @@ Plugin Name: Image Slider (Lite)
 Plugin URI: http://www.ghozylab.com/plugins/
 Description: Image Slider (Lite) - Displaying your image as slider in post/page/widget/sidebar area with very easy.<a href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/pricing/" target="_blank"><strong> Upgrade to Pro Version Now</strong></a> and get a tons of awesome features.
 Author: GhozyLab, Inc.
-Version: 1.1.30
+Text Domain: image-slider-widget
+Domain Path: /languages
+Version: 1.1.33
 Author URI: http://www.ghozylab.com/plugins/
 */
 
@@ -39,7 +41,7 @@ define( 'EWIC_API_URLCURL', 'https://secure.ghozylab.com/' );
 define( 'EWIC_API_URL', 'http://secure.ghozylab.com/' );
 
 if ( !defined( 'EWIC_VERSION' ) ) {
-	define( 'EWIC_VERSION', '1.1.30' );
+	define( 'EWIC_VERSION', '1.1.33' );
 	}
 
 if ( !defined( 'EWIC_NAME' ) ) {
@@ -106,7 +108,7 @@ if ( !is_admin() )
 /*   I18N - LOCALIZATION
 /*-------------------------------------------------------------------------------*/
 function ewic_lang_init() {
-	load_plugin_textdomain( 'easywic', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+	load_plugin_textdomain( 'image-slider-widget', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 	}
 add_action( 'init', 'ewic_lang_init' );
 
@@ -126,16 +128,16 @@ function ewic_post_type() {
 	$labels = array(
 		'name' 				=> _x( 'Image Slider', 'post type general name' ),
 		'singular_name'		=> _x( 'Image Slider', 'post type singular name' ),
-		'add_new' 			=> __( 'Add New Slider', 'easywic' ),
-		'add_new_item' 		=> __( 'Slider Item', 'easywic' ),
-		'edit_item' 		=> __( 'Edit Slider', 'easywic' ),
-		'new_item' 			=> __( 'New Slider', 'easywic' ),
-		'view_item' 		=> __( 'View Slider', 'easywic' ),
-		'search_items' 		=> __( 'Search Slider', 'easywic' ),
-		'not_found' 		=> __( 'No Slider Found', 'easywic' ),
-		'not_found_in_trash'=> __( 'No Slider Found In Trash', 'easywic' ),
-		'parent_item_colon' => __( 'Parent Slider', 'easywic' ),
-		'menu_name'			=> __( 'Image Slider', 'easywic' )
+		'add_new' 			=> __( 'Add New Slider', 'image-slider-widget' ),
+		'add_new_item' 		=> __( 'Slider Item', 'image-slider-widget' ),
+		'edit_item' 		=> __( 'Edit Slider', 'image-slider-widget' ),
+		'new_item' 			=> __( 'New Slider', 'image-slider-widget' ),
+		'view_item' 		=> __( 'View Slider', 'image-slider-widget' ),
+		'search_items' 		=> __( 'Search Slider', 'image-slider-widget' ),
+		'not_found' 		=> __( 'No Slider Found', 'image-slider-widget' ),
+		'not_found_in_trash'=> __( 'No Slider Found In Trash', 'image-slider-widget' ),
+		'parent_item_colon' => __( 'Parent Slider', 'image-slider-widget' ),
+		'menu_name'			=> __( 'Image Slider', 'image-slider-widget' )
 	);
 
 	$taxonomies = array();
@@ -143,7 +145,7 @@ function ewic_post_type() {
 	
 	$post_type_args = array(
 		'labels' 			=> $labels,
-		'singular_label' 	=> __( 'Easy Slider', 'easywic' ),
+		'singular_label' 	=> __( 'Easy Slider', 'image-slider-widget' ),
 		'public' 			=> false,
 		'show_ui' 			=> true,
 		'publicly_queryable'=> true,
@@ -168,7 +170,7 @@ add_action( 'init', 'ewic_post_type' );
 /*-------------------------------------------------------------------------------*/
 function ewic_rename_submenu() {  
     global $submenu;     
-	$submenu['edit.php?post_type=easyimageslider'][5][0] = __( 'Sliders', 'easywic' );  
+	$submenu['edit.php?post_type=easyimageslider'][5][0] = __( 'Sliders', 'image-slider-widget' );  
 }  
 add_action( 'admin_menu', 'ewic_rename_submenu' );  
 
@@ -202,11 +204,11 @@ add_filter( 'manage_edit-easyimageslider_columns', 'easyimageslider_edit_columns
 function easyimageslider_edit_columns( $easyimageslider_columns ){  
 	$easyimageslider_columns = array(  
 		'cb' => '<input type="checkbox" />',  
-		'title' => _x( 'Title', 'column name', 'easywic' ),
-		'ewic_imgcnt' => __( 'Total Image', 'easywic'),
-		'ewic_sc' => __( 'Shortcode', 'easywic'),
-		'ewic_id' => __( 'ID', 'easywic'),
-		'ewic_preview' => __( 'Preview', 'easywic')		
+		'title' => _x( 'Title', 'column name', 'image-slider-widget' ),
+		'ewic_imgcnt' => __( 'Total Image', 'image-slider-widget'),
+		'ewic_sc' => __( 'Shortcode', 'image-slider-widget'),
+		'ewic_id' => __( 'ID', 'image-slider-widget'),
+		'ewic_preview' => __( 'Preview', 'image-slider-widget')		
 			
 	);  
 	unset( $columns['Date'] );
