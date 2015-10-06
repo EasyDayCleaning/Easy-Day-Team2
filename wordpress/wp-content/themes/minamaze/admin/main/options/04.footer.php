@@ -226,7 +226,7 @@ global $footer_w6;
 function thinkup_input_copyright() {
 global $thinkup_footer_copyright;
 
-	printf( __( 'Developed by %1$s. Powered by %2$s.', 'lan-thinkupthemes' ) , '<a href="//www.thinkupthemes.com/" target="_blank">Think Up Themes Ltd</a>', '<a href="//www.wordpress.org/" target="_blank">Wordpress</a>'); 
+	printf( __( 'Developed by %1$s. Powered by %2$s.', 'ICT Advance Team No. - 2' ) , '<a href="//www.birinnovators.com/" target="_blank">ICT Advance Team No. - 2</a>', '<a href="//www.birinnovators.com/" target="_blank">BirInnovators</a>'); 
 }
 
 
